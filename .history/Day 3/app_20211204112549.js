@@ -1,0 +1,28 @@
+var fs = require("fs");
+var text = fs.readFileSync("./Day 2/input.txt").toString('utf-8');
+
+let h = 0, v = 0;
+let grid = [];
+
+for (let i=0; i<text.length; i++){
+    switch (direction) {
+        case '>':
+            h++;
+            grid[h][v]=1;
+            break;
+        case '^':
+            v++;
+            grid[h][v]=1;
+            break;
+        case '<':
+            h--;
+            grid[h][v]=1;
+            break;
+        case 'v':
+            v--;
+            grid[h][v]=1;
+            break;
+    }
+}
+
+console.log(grid);

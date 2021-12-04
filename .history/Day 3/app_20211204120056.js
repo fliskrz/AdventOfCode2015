@@ -20,50 +20,39 @@ for (let i=0; i<text.length; i+=2){
         case '>':
             h++;
             grid[h][v] = 1;
-            console.log(h,v,grid[h][v]);
             break;
         case '^':
             v++;
             grid[h][v] = 1;
-            console.log(h,v,grid[h][v]);
             break;
         case '<':
             h--;
             grid[h][v] = 1;
-            console.log(h,v,grid[h][v]);
             break;
         case 'v':
             v--;
             grid[h][v] = 1;
-            console.log(h,v,grid[h][v]);
             break;
     }
 }
-
-h = text.length/2;
-v = text.length/2;
-
+let h = text.length/2, v = text.length/2;
 for (let i=1; i<text.length; i+=2){
     switch (text[i]){
         case '>':
             h++;
             grid[h][v] = 1;
-            console.log(h,v,grid[h][v]);
             break;
         case '^':
             v++;
             grid[h][v] = 1;
-            console.log(h,v,grid[h][v]);
             break;
         case '<':
             h--;
             grid[h][v] = 1;
-            console.log(h,v,grid[h][v]);
             break;
         case 'v':
             v--;
             grid[h][v] = 1;
-            console.log(h,v,grid[h][v]);
             break;
     }
 }
